@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C71E4CAD2EC44CEB006B5DBA /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = C71E4CAC2EC44CEB006B5DBA /* SocketIO */; };
+		C71E4CB22EC450EC006B5DBA /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = C71E4CB12EC450EC006B5DBA /* SocketIO */; };
+		C71E4CC62EC4537C006B5DBA /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = C71E4CC52EC4537C006B5DBA /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C71E4CAD2EC44CEB006B5DBA /* SocketIO in Frameworks */,
+				C71E4CB22EC450EC006B5DBA /* SocketIO in Frameworks */,
+				C71E4CC62EC4537C006B5DBA /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +85,8 @@
 			);
 			name = "Socket-iO";
 			packageProductDependencies = (
-				C71E4CAC2EC44CEB006B5DBA /* SocketIO */,
+				C71E4CB12EC450EC006B5DBA /* SocketIO */,
+				C71E4CC52EC4537C006B5DBA /* Starscream */,
 			);
 			productName = "Socket-iO";
 			productReference = C71E4C002EC44AE3006B5DBA /* Socket-iO.app */;
@@ -114,7 +117,8 @@
 			mainGroup = C71E4BF72EC44AE3006B5DBA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C71E4CAB2EC44CEB006B5DBA /* XCRemoteSwiftPackageReference "socket" */,
+				C71E4CB02EC450EC006B5DBA /* XCRemoteSwiftPackageReference "socket" */,
+				C71E4CC42EC4537C006B5DBA /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C71E4C012EC44AE3006B5DBA /* Products */;
@@ -346,21 +350,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C71E4CAB2EC44CEB006B5DBA /* XCRemoteSwiftPackageReference "socket" */ = {
+		C71E4CB02EC450EC006B5DBA /* XCRemoteSwiftPackageReference "socket" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 16.1.1;
+				minimumVersion = 16.0.0;
+			};
+		};
+		C71E4CC42EC4537C006B5DBA /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C71E4CAC2EC44CEB006B5DBA /* SocketIO */ = {
+		C71E4CB12EC450EC006B5DBA /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C71E4CAB2EC44CEB006B5DBA /* XCRemoteSwiftPackageReference "socket" */;
+			package = C71E4CB02EC450EC006B5DBA /* XCRemoteSwiftPackageReference "socket" */;
 			productName = SocketIO;
+		};
+		C71E4CC52EC4537C006B5DBA /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C71E4CC42EC4537C006B5DBA /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
